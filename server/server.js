@@ -57,12 +57,12 @@ app.get("/get-random", (req, res) => {
 })
 const myProxy = [
   {
-    linkChange: "https://api.enode.vn/getip/e217a338ca81f91b792ee43f193e40334d992bad",
-    proxy: "http://117.1.90.87:44708"
+    linkChange: "https://api.enode.vn/getip/252b199f8b01defd0f593b4a25c780b65ab243ab",
+    proxy: "http://117.1.91.8:13153"
   },
   {
-    linkChange: "https://api.enode.vn/getip/2abfd2382b03604ce2b1e43e0527cc1d7e78dd88",
-    proxy: "http://117.1.87.232:34864"
+    linkChange: "https://api.enode.vn/getip/4ab3b3346e5cbd778a783d87cf946238361944e1",
+    proxy: "http://117.1.89.72:48274"
   }
 ]; // 1 rảnh, 0 bận
 
@@ -174,7 +174,7 @@ app.get("/getLink_NonEx", async (req, res) => {
   try {
     if (mailIsGetLink) {
       return res.json(temp);
-    } else {  
+    } else {
       return res.json({ error: "Chưa có link" });
     }
 
